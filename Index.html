@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portafolio de Facundo Viñas</title>
+    <link rel="shortcut icon" href="devp.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <button onclick="location.href='#inicio'">Inicio</button>
+            <button onclick="location.href='#habilidades'">Habilidades</button>
+            <button onclick="location.href='#section-proyectos'">Proyectos</button>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="inicio">
+            
+            <div id=" box" class="box"></div>
+            
+            <img id="yo" src="yo.jpg" alt="Facundo Viñas">
+            <h2 id="texto">Hola, soy <span class="color-acento">Facundo Viñas</span></h2>
+            <p>Un apasionado <span class="color-acento">Desarrollador Web</span> principiante.</p>
+            <button onclick="window.open('https://github.com/Facando', '_blank')" class="github-button">
+
+                Github
+                <i class="fab fa-github"></i>
+            </button>
+            <a href="mailto:vinas335@gmail.com">
+            <button onclick="c">Contacto
+                <i class="fa-regular fa-envelope"></i>
+            </button>
+        </a> 
+
+         <button onclick="window.open('https://www.linkedin.com/in/facundo-vi%C3%B1as-/', '_blank')" class="custom-button">LinkedIn
+                <i class="fab fa-linkedin"></i>
+        </section>
+        
+        <section id="habilidades">
+            <h2>Habilidades</h2>
+            <div id="foto">
+                <div class ="html">
+                    
+                    <img src="html-5.png" alt="HTML5" class="img"><h4>HTML</h4></div>
+                <div class="css">
+                    <img src="css-3.png" alt="CSS3" class="img"><h4>CSS</h4></div>
+                <div class="js">
+                    <img src="js.png" alt="JavaScript" class="img"><h4>JavaScript</h4>
+                </div>
+                <div class="python">
+                    <img src="python.png" alt="Python" class="img"><h4>Python</h4>
+                </div>
+            </div>
+        </section>
+        
+        <section id="section-proyectos">
+            <h2>Proyectos</h2>
+            <div class="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <h3>Calendario de Tareas</h3>
+                        <img src="Captura de pantalla_6-11-2024_104820_facando.github.io.jpeg" alt="Vista previa del Proyecto 2" class="imagen-proyecto">
+                        <p>Este es un proyecto de Calendario de Tareas interactivo donde puedes agregar, editar, completar y eliminar tareas. También puedes aplicar filtros por prioridad, restaurar la última tarea eliminada y visualizar notificaciones sobre las tareas pendientes según su prioridad.</p>
+                        <button onclick="location.href='https://facando.github.io/ProyectoFinal_Facundo_Vinas/index.html' "  class="btn-info">Más Información</button>
+                    </div>
+                    <div class="carousel-item">
+                        <h3><i class="fa-solid fa-sun"></i> Liveweat</h3>
+                        <img src="Liveweat.png" alt="Vista previa del Proyecto 1" class="imagen-proyecto">
+                        <p>Aplicación Web de clima hecha con Api openweather.</p>
+                        <button onclick="location.href='https://link-proyecto1.com'" class="btn-info">Más Información</button>
+                    </div>
+                    <div class="carousel-item">
+                        <h3>Proyecto 3</h3>
+                        <img src="Captura de pantalla 2021-07-13 182438.png" alt="Vista previa del Proyecto 3" class="imagen-proyecto">
+                        <p>Descripción breve del Proyecto 3, destacando las tecnologías usadas y el propósito del proyecto.</p>
+                        <button onclick="location.href='https://link-proyecto3.com'" class="btn-info">Más Información</button>
+                    </div>
+                </div>
+                <button class="carousel-control prev" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="carousel-control next" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+                
+        </section>
+        
+    </main>
+    
+    <footer>
+        <p id="footer"></p>
+    </footer>
+</body>
+</html>

@@ -155,7 +155,26 @@ p {
 }
 
 
+.linkedin-button {
+    text-decoration: none;
+    background-color: #24292e3a;
+    color: #ffffff;
+    border: #4727cd 5px;
+    box-shadow: 0 0 0 4px rgba(59, 3, 214, 0.3);
+    padding: 10px 20px;
+    border-radius: 12px;
+    margin-top: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
 
+.linkedin-button:hover {
+    background-color: #130341;
+}
+
+.linkedin-button:active {
+    background-color: #4727cd;
+}
 
 
 #habilidades, #proyectos {

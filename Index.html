@@ -11,14 +11,26 @@
 </head>
 <body>
     <header>
+        
         <nav>
             <button onclick="location.href='#inicio'">Inicio</button>
             <button onclick="location.href='#habilidades'">Habilidades</button>
             <button onclick="location.href='#section-proyectos'">Proyectos</button>
+       
+            <!-- Botón de menú hamburguesa que aparece en dispositivos móviles -->
+            <button id="menu-toggle" class="menu-hamburguesa">&#9776;</button>
+    
+            <!-- Contenedor de los botones del menú, que se oculta y muestra en modo móvil -->
+            <div id="menu-items" class="menu-items">
+                <button onclick="location.href='#inicio'">Inicio</button>
+                <button onclick="location.href='#habilidades'">Habilidades</button>
+                <button onclick="location.href='#section-proyectos'">Proyectos</button>
+            </div>
         </nav>
     </header>
     
     <main>
+        
         <section id="inicio">
             
             <div id=" box" class="box"></div>
@@ -66,7 +78,7 @@
                         <h3>Calendario de Tareas</h3>
                         <img src="./img/Captura de pantalla_6-11-2024_104820_facando.github.io.jpeg" alt="Vista previa del Proyecto 2" class="imagen-proyecto">
                         <p>Este es un proyecto de Calendario de Tareas interactivo donde puedes agregar, editar, completar y eliminar tareas. También puedes aplicar filtros por prioridad, restaurar la última tarea eliminada y visualizar notificaciones sobre las tareas pendientes según su prioridad.</p>
-                        <button onclick="location.href='https://facando.github.io/ProyectoFinal_Facundo_Vinas/index.html' "  class="btn-info">Más Información</button>
+                        <button onclick="location.href='https://facando.github.io/Proyecto-tareas/' "  class="btn-info">Más Información</button>
                     </div>
                     <div class="carousel-item">
                         <h3><i class="fa-solid fa-sun"></i> Liveweat</h3>

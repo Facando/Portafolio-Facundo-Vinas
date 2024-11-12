@@ -21,3 +21,19 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.carousel-item')[0].classList.add('active');
 });
 
+// Selecciona el botón de hamburguesa y el contenedor del menú
+const menuToggle = document.getElementById('menu-toggle');
+const menuItems = document.getElementById('menu-items');
+
+// Agrega un evento de clic para alternar la visibilidad del menú
+menuToggle.addEventListener('click', function () {
+    menuItems.classList.toggle('active');
+});
+
+// Cierra el menú automáticamente cuando se hace clic en un enlace (opcional)
+const menuButtons = document.querySelectorAll('#menu-items button');
+menuButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        menuItems.classList.remove('active');
+    });
+});

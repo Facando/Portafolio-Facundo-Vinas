@@ -4,20 +4,13 @@
     --color-texto: #ffffff;
 }
 
-
-
-
-
 body {
-   background-color: var(--color-fondo);
+    background-color: var(--color-fondo);
     font-family: 'Verdana', 'Tahoma', sans-serif;
     color: var(--color-texto);
     margin: 0;
     background-image: linear-gradient(144deg, #130150, #070130 50%,#020008);
     scrollbar-color: #1b1b1b00 #00002400;
-    
-      
-    
 }
 
 nav {
@@ -31,14 +24,11 @@ nav {
     top: 0;
     z-index: 1000;
     border-radius: 10%;
-    
-    
 }
 
 nav button {
     background: none;
     display: flex;
-   
     align-content: end;
     border: none;
     color: var(--color-texto);
@@ -50,35 +40,31 @@ nav button {
 
 nav button:hover {
     color: var(--color-acento);
-    
 }
 
 #inicio {
     padding: 0px 20px 10px;
     text-align: center;
     padding-bottom: 100px;
-    
-    
 }
 
 .box {
-
     width: 169px;
     height: 169px;
     margin: 0px auto;
     top: 175px;
     background-color: #ffffff00;
-    border-radius: 60%; 
+    border-radius: 60%;
     border-left: 5px inset #4827cd13;
     border-top: 5px solid #4827cd00;
     border-bottom: 5px solid #4827cd00;
     border-right: 5px inset #4827cd10;
-    
-    animation: rotate 1.5s infinite alternate ;
+    animation: rotate 1.5s infinite alternate;
     position: relative;
     animation-play-state: paused;
     z-index: 1;
 }
+
 #yo {
     width: 160px;
     height: 160px;
@@ -89,24 +75,16 @@ nav button:hover {
     object-position: top; /* Posiciona la imagen hacia abajo */
 }
 
-
-
 @keyframes rotate {
-    
     0% {
-       border-top: 5px solid #5a31ff;
+        border-top: 5px solid #5a31ff;
         border-bottom: 5px solid #592fff;
-         transform: rotate(0deg);
-        
-        
-       
+        transform: rotate(0deg);
     }
     100% {
         transform: rotate(360deg);
-        
     }
 }
-
 
 h2 {
     font-size: 2rem;
@@ -120,43 +98,6 @@ p {
 }
 
 #inicio button {
-
-
-
-    background-color: #24292e3a;
-    color: #ffffff;
-    border: #4727cd 5px ;
-    box-shadow: 0 0 0 4px rgba(59, 3, 214, 0.3);
-    padding: 10px 20px;
-    border-radius: 12px;
-    margin-top: 10px;
-    margin-right: 10px;
-    font-size: 16px;
-    cursor:pointer;
-    
-    }
-  
-  
-
-
-#inicio button:hover {
-    background-color: #180253;
-    
-}
-
-#inicio button:active {
-    background-color: var(--color-acento);
-    
-}
-
-#inicio button:focus {
-    outline: none;
-    box-shadow: 0 0 0 3px rgba(59, 3, 214, 0.3);
-}
-
-
-.linkedin-button {
-    text-decoration: none;
     background-color: #24292e3a;
     color: #ffffff;
     border: #4727cd 5px;
@@ -164,42 +105,43 @@ p {
     padding: 10px 20px;
     border-radius: 12px;
     margin-top: 10px;
+    margin-right: 10px;
     font-size: 16px;
     cursor: pointer;
 }
 
-.linkedin-button:hover {
-    background-color: #130341;
+#inicio button:hover {
+    background-color: #180253;
 }
 
-.linkedin-button:active {
-    background-color: #4727cd;
+#inicio button:active {
+    background-color: var(--color-acento);
 }
 
+#inicio button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(59, 3, 214, 0.3);
+}
 
 #habilidades, #proyectos {
     padding: 150px 200px 100px 200px;
     text-align: center;
 }
-#proyectos{
+
+#proyectos {
     padding-top: 100px;
     box-sizing: 100px;
-
 }
-
 
 .html, .css, .js, .python {
     display: grid;
     width: 100px;
     height: 90px;
     border: 3px solid #4827cd70;
-    
     background-color: rgba(0, 0, 0, 0.6);
-    
     border-radius: 10%;
     font-size: 10px;
 }
-
 
 #foto {
     display: flex;
@@ -207,12 +149,11 @@ p {
     gap: 1rem;
     margin-top: 2rem;
 }
-#foto :hover{
+
+#foto:hover {
     box-sizing: 100px;
     background-color: #070130;
-    
 }
-
 
 .img {
     width: 40px;
@@ -232,23 +173,16 @@ footer {
     z-index: 1000;
 }
 
-
-
 .color-acento {
     color: var(--color-acento);
 }
-
-
-
 
 #section-proyectos {
     padding: 50px 200px 100px 200px;
     text-align: center;
     max-width: 800px;
     margin: 0 auto;
-    
 }
-
 
 #section-proyectos h2 {
     font-size: 2.5em;
@@ -311,13 +245,13 @@ footer {
 .btn-info {
     background-color: #24292e3a;
     color: #ffffff;
-    border: #4727cd 5px ;
+    border: #4727cd 5px;
     box-shadow: 0 0 0 4px rgba(59, 3, 214, 0.3);
     padding: 10px 20px;
     border-radius: 12px;
     margin-top: 10px;
     font-size: 16px;
-    cursor:pointer;
+    cursor: pointer;
     transition: background-color 0.1s ease;
 }
 
@@ -329,113 +263,113 @@ footer {
     background-color: #4727cd;
 }
 
-
 .carousel-control {
     position: absolute;
     top: 50%;
-    
     transform: translateY(-50%);
     background-color: #0000001e;
     color: var(--color-acento);
     border: 0px;
-    animation: slade 1s infinite  alternate linear reverse;
+    animation: slade 1s infinite alternate linear reverse;
     padding: 10px;
     cursor: pointer;
     font-size: 24px;
     z-index: 1;
-    
 }
 
 .carousel-control.prev {
     left: 10px;
-    
 }
 
 .carousel-control.next {
     right: 10px;
-    
 }
-
 
 #palabra {
     padding-top: -50px;
     text-align: center;
     max-width: 800px;
     margin: 0 auto;
-    
-    
 }
 
 
-
-
-
-@media screen and (max-width: 968px) {
-
-    .inicio {
-        height: 100vh;
-    }
-
-    .html, .css, .js {
-        width: 80px;
-        height: 60px;
-    }
-
-    .img {
-        width: 30px;
-        height: 30px;
-    }
-
-    #habilidades {
-        padding: 50px 50px 100px 50px;
-    }
-
-    #section-proyectos {
-        padding: 50px 50px 100px 50px;
-    }
-
-    #section-proyectos h2 {
-        font-size: 2em;
-    }
-
-    .carousel-item p {
-        font-size: 0.8em;
-    }
-
-    .btn-info { 
-        font-size: 12px;
-    }
-
-    .imagen-proyecto {
-        width: 80%;
-    }
-
-    .carousel-control {
-        font-size: 16px;
-    }
-
-    .carousel-control.prev {
-        left: 5px;
-    }
-
-    .carousel-control.next {
-        right: 5px;
-    }
-
-    nav button{
-        font-size: 20px;
-    }
-
-
-    #palabra {
-        padding-top: -50px;
-        text-align: center;
-        max-width: 800px;
-        margin: 0 auto;
-        
-    }
-    
-
-    
+/* Botón Hamburguesa para menú móvil */
+.menu-hamburguesa {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: var(--color-texto);
+    cursor: pointer;
+    transition: color 0.3s ease;
 }
 
+.menu-hamburguesa:hover {
+    color: var(--color-acento);
+}
+
+/* Estilos del menú deslizante en dispositivos móviles */
+.menu-items {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: -100%;
+    width: 250px;
+    height: 100%;
+    background-color: var(--color-menu-fondo);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: left 0.3s ease;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+.menu-items.active {
+    left: 0;
+}
+
+/* Estilos para los botones del menú en móvil */
+.menu-items button {
+    font-size: 1.5rem;
+    color: var(--color-texto);
+    background: none;
+    border: none;
+    margin: 1rem 0;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.3s ease;
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem 0;
+}
+
+.menu-items button:hover {
+    color: var(--color-acento);
+    background-color: var(--color-menu-hover);
+}
+
+/* Ajustes de estilo para pantallas pequeñas */
+@media screen and (max-width: 900px) {
+    .menu-hamburguesa {
+        display: block;
+    }
+
+    /* Oculta los botones en nav en pantallas pequeñas y solo muestra el menú hamburguesa */
+    nav button {
+        display: none;
+    }
+}
+
+/* Sombreado y suavidad en elementos del menú */
+.menu-items {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.menu-items button:hover {
+    color: var(--color-acento);
+    background-color: var(--color-menu-hover);
+    border-radius: 8px;
+    padding: 0.6rem;
+}

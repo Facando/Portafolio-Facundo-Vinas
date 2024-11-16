@@ -4,6 +4,12 @@
     --color-texto: #ffffff;
 }
 
+:root {
+    
+    --color-menu-hover: #ecf0f1; /* Ejemplo de color */
+}
+
+
 body {
     background-color: var(--color-fondo);
     font-family: 'Verdana', 'Tahoma', sans-serif;
@@ -348,16 +354,23 @@ footer {
     color: var(--color-acento);
     background-color: var(--color-menu-hover);
 }
-
 /* Ajustes de estilo para pantallas pequeñas */
 @media screen and (max-width: 900px) {
     .menu-hamburguesa {
-        display: block;
+        display: flex;
+        align-items: center;
+        margin-right: 170px; /* Asegúrate de que este valor sea consistente con tu diseño */
     }
 
     /* Oculta los botones en nav en pantallas pequeñas y solo muestra el menú hamburguesa */
     nav button {
-        display: none;
+        display: none; /* Oculta todos los botones dentro del nav */
+    }
+    .navbar {
+        display: flex; /* Oculta el nav en pantallas pequeñas */
+    }
+    .menu-items {
+        display: flex;
     }
 }
 
@@ -368,8 +381,8 @@ footer {
 }
 
 .menu-items button:hover {
-    color: var(--color-acento);
-    background-color: var(--color-menu-hover);
-    border-radius: 8px;
-    padding: 0.6rem;
+    color: var(--color-acento); /* Usa una variable CSS para personalizar fácilmente los colores */
+    background-color: var(--color-menu-hover); /* Asegúrate de definir esta variable en el root */
+    border-radius: 8px; /* Redondeo adicional para los botones al pasar el cursor */
+    padding: 0.6rem; /* Ajuste de espacio interno para el botón */
 }

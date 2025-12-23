@@ -7,12 +7,18 @@
     <title>Portafolio de Facundo Viñas</title>
     <link rel="shortcut icon" href="./img/devp.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <script defer src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    
 </head>
 <body>
     <header>
-        
+       
+
         <nav class="navbar">
+            <strong>Facundo Viñas</strong>
             <button onclick="location.href='#inicio'">Inicio</button>
             <button onclick="location.href='#habilidades'">Habilidades</button>
             <button onclick="location.href='#section-proyectos'">Proyectos</button>
@@ -32,72 +38,132 @@
     <main>
         
         <section id="inicio">
-            
-            <div id=" box" class="box"></div>
-            
-            <img id="yo" src="./img/yo.jpg" alt="Facundo Viñas">
-            <h2 id="texto">Hola, soy <span class="color-acento">Facundo Viñas</span></h2>
-            <p>Un apasionado <span class="color-acento">Desarrollador Web</span> principiante.</p>
-            <button onclick="window.open('https://github.com/Facando', '_blank')" class="github-button">
-
-                Github
-                <i class="fab fa-github"></i>
-            </button>
-            <a href="mailto:vinas335@gmail.com">
-            <button onclick="c" class="custom-button">Contacto
-                <i class="fa-regular fa-envelope"></i>
-            </button></a>
-        </a> 
-
-         <button onclick="window.open('https://www.linkedin.com/in/facundo-vi%C3%B1as/', '_blank')" class="custom-button">LinkedIn
-                <i class="fab fa-linkedin"></i>
-        </section>
-        
-        <section id="habilidades">
-            <h2>Habilidades</h2>
-            <div id="foto">
-                <div class ="html">
-                    
-                    <img src="./img/html-5.png" alt="HTML5" class="img"><h4>HTML</h4></div>
-                <div class="css">
-                    <img src="./img/css-3.png" alt="CSS3" class="img"><h4>CSS</h4></div>
-                <div class="js">
-                    <img src="./img/js.png" alt="JavaScript" class="img"><h4>JavaScript</h4>
+            <div class="inicio-texto">
+                <h2 id="texto">Front-End Developer</h2>
+                <p class="parafo">Estudiante de la UTN FRBA. Desarrollo interfaces modernas, limpias y funcionales con JavaScript.</p>
+                <div class="badges">
+                    <span class="badge">HTML</span>
+                    <span class="badge">CSS</span>
+                    <span class="badge">JavaScript</span>
+                    <span class="badge">Apis</span>
                 </div>
-                <div class="python">
-                    <img src="./img/python.png" alt="Python" class="img"><h4>Python</h4>
+                <div class="inicio-botones">
+                    <button onclick="window.open('https://github.com/Facando', '_blank')" class="github-button">
+                        Github
+                        <i class="fab fa-github"></i>
+                    </button>
+                    <a href="mailto:vinas335@gmail.com">
+                        <button class="custom-button">
+                            Contacto
+                            <i class="fa-regular fa-envelope"></i>
+                        </button>
+                    </a>
+                    <button onclick="window.open('https://www.linkedin.com/in/facundo-vi%C3%B1as/', '_blank')" class="custom-button">
+                        LinkedIn
+                        <i class="fab fa-linkedin"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="inicio-foto">
+                <div id="box" class="box">
+                    <img id="yo" src="./img/yo.jpg" alt="Facundo Viñas">
                 </div>
             </div>
         </section>
+        
+      <section id="habilidades">
+  <h2>Habilidades</h2>
+
+  <div class="skills-grid">
+    <div class="skill-card">
+      <img src="./img/html-5.png" alt="HTML" class="skill-icon">
+      <h4>HTML</h4>
+    </div>
+
+    <div class="skill-card">
+      <img src="./img/css-3.png" alt="CSS" class="skill-icon">
+      <h4>CSS</h4>
+    </div>
+
+    <div class="skill-card">
+      <img src="./img/js.png" alt="JavaScript" class="skill-icon">
+      <h4>JavaScript</h4>
+    </div>
+
+    <div class="skill-card">
+      <img src="./img/python.png" alt="Python" class="skill-icon">
+      <h4>Python</h4>
+    </div>
+    <div class="skill-card">
+      <img src="./img/physics.png" alt="React" class="skill-icon">
+      <h4>React</h4>
+    </div>
+    <div class="skill-card">
+      <img src="./img/node-js.png" alt="Node.js" class="skill-icon">
+      <h4>Node.js</h4>
+    </div>
+   
+    <div class="skill-card">
+      <img src="./img/mongodb-icon-1.svg" alt="MongoDB" class="skill-icon">
+      <h4>MongoDB</h4>
+    </div>
+    <div class="skill-card">
+      <img src="./img/database.png" alt="MySQL" class="skill-icon">
+      <h4>MySQL</h4>
+    </div>
+   
+    <div class="skill-card">
+      <img src="./img/social.png" alt="Git" class="skill-icon">
+      <h4>Git</h4>
+    </div>
+    <div class="skill-card">
+      <img src="./img/github.png" alt="GitHub" class="skill-icon">
+      <h4>GitHub</h4>
+    </div>
+ 
+  </div>
+</section>
+
         
         <section id="section-proyectos">
             <h2>Proyectos</h2>
-            <div class="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <h3>Calendario de Tareas</h3>
-                        <img src="./img/Captura de pantalla_6-11-2024_104820_facando.github.io.jpeg" alt="Vista previa del Proyecto 2" class="imagen-proyecto">
-                        <p>Este es un proyecto de Calendario de Tareas interactivo donde puedes agregar, editar, completar y eliminar tareas. También puedes aplicar filtros por prioridad, restaurar la última tarea eliminada y visualizar notificaciones sobre las tareas pendientes según su prioridad.</p>
-                        <button onclick="location.href='https://facando.github.io/Proyecto-tareas/' "  class="btn-info">Más Información</button>
+            <div class="proyectos-grid">
+                <div class="proyecto-card">
+                    <img src="./img/Captura de pantalla 2024-06-28 112427.png" alt="Proyecto 1" class="proyecto-imagen">
+                    
+                    <div class="card-content">
+                      <h3>Calculadora de IMC</h3>
+                      <p>Una aplicación web que calcula el Índice de Masa Corporal (IMC) basado en la altura y peso del usuario.</p>
+                      <button onclick="window.open('https://facando.github.io/Calculadora-IMC/', '_blank')" class="proyecto-boton">Ver Proyecto</button>
                     </div>
-                    <div class="carousel-item">
-                        <h3><i class="fa-solid fa-sun"></i> Liveweath</h3>
-                        <img src="./img/Liveweat.png" alt="Vista previa del Proyecto 1" class="imagen-proyecto">
-                        <p>Aplicación Web de clima hecha con Api openweather.</p>
-                        <button onclick="location.href='https://link-proyecto1.com'" class="btn-info">Más Información</button>
+                </div>
+                <div class="proyecto-card">
+                    <img src="./img/Captura de pantalla_6-11-2024_104820_facando.github.io.jpeg" alt="Proyecto 2" class="proyecto-imagen">
+                    
+                    <div class="card-content">
+                      <h3>To-Do List</h3>
+                      <p>Una aplicación de lista de tareas que permite a los usuarios agregar, eliminar y marcar tareas como completadas.</p>
+                      <button onclick="window.open('https://facando.github.io/To-Do-List-JS/', '_blank')" class="proyecto-boton">Ver Proyecto</button>
                     </div>
                     
                 </div>
-                <button class="carousel-control prev" onclick="moveSlide(-1)">&#10094;</button>
-                <button class="carousel-control next" onclick="moveSlide(1)">&#10095;</button>
-            </div>
+                <div class="proyecto-card">
+                    <img src="./img/Liveweat.png" alt="Proyecto 3" class="proyecto-imagen">
+                    
+                    <div class="card-content">
+                      <h3>Reloj Digital</h3>
+                      <p>Un reloj digital en tiempo real que muestra la hora actual con un diseño moderno y atractivo.</p>
+                      <button onclick="window.open('https://facando.github.io/Reloj-Digital-JS/', '_blank')" class="proyecto-boton">Ver Proyecto</button>
+                    </div>
                 
         </section>
-        
+    
     </main>
     
     <footer>
         <p id="footer"></p>
     </footer>
+    <div id="universe"></div>     
+    <script src="script.js"></script>
 </body>
 </html>
